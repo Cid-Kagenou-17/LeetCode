@@ -11,6 +11,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0745-find-smallest-letter-greater-than-target](https://github.com/Cid-Kagenou-17/LeetCode/tree/master/0745-find-smallest-letter-greater-than-target) |
 | [0882-peak-index-in-a-mountain-array](https://github.com/Cid-Kagenou-17/LeetCode/tree/master/0882-peak-index-in-a-mountain-array) |
 | [1185-find-in-mountain-array](https://github.com/Cid-Kagenou-17/LeetCode/tree/master/1185-find-in-mountain-array) |
+| [1878-check-if-array-is-sorted-and-rotated](https://github.com/Cid-Kagenou-17/LeetCode/tree/master/1878-check-if-array-is-sorted-and-rotated) |
 ## Binary Search
 |  |
 | ------- |
