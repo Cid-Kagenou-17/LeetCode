@@ -3,24 +3,25 @@ public:
     void rotate(vector<int>& nums, int k) {
 
         int N = nums.size();
-        int m=0;
-        pair <int,int> p_array[N];
 
-        for(int i=0;i<N;i++){
-            p_array[i] = make_pair(i,nums[i]);
-        }
+            pair <int,int> p_array[N];
 
-        for(auto &i:p_array){
-        	int z = ((m+1+k+N)%N)-1;
-        	if(z<0)
-        		z = N-1;
-            i.first = z;
-            m++;
-        }
+            for(int i=0;i<N;i++){
+                p_array[i].first = i;
+            }
 
-        for(auto i:p_array){
-            nums[i.first] = i.second;
+            for(int i=0;i<N;i++){
+                p_array[i].second = nums[i];
+            }
+
+            for(int i=0;i<N;i++){
+                int pi = p_array[i].first;
+                int newindex = (pi+k)%N;
+                p_array[i].first = newindex; 
+            }
+
+            for(int i=0;i<N;i++){
+                nums[p_array[i].first] = p_array[i].second;
+            }
         }
-        
-    }
 };
