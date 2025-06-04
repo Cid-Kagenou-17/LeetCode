@@ -3,16 +3,25 @@ public:
     int missingNumber(vector<int>& nums) {
 
         int n = nums.size();
-        int s=0;
-        int summ = (n * (n+1))/2;
+        int ans;
 
         for(int i=0;i<n;i++){
-            s+= nums[i];
+
+            while(nums[i]!=i){
+                if(nums[i]>n-1){
+                    break;
+                }
+                else{
+                    swap(nums[i],nums[nums[i]]);
+                }
+            }
         }
-
-        int ans = summ-s;
-
+        for(int i=0;i<n;i++){
+            if(nums[i]!=i){
+                ans = i;
+                break;
+            }
+        }
         return ans;
-        
     }
 };
