@@ -19,9 +19,9 @@ public:
                 ans = mid;
                 break;
             }
-            else if(arr[mid]<arr[mid-1])
+            else if(arr[mid]<=arr[mid-1])
             end = mid-1;
-            else if(arr[mid]<arr[mid+1])
+            else if(arr[mid]<=arr[mid+1])
             st = mid+1;
         }
         return ans;
